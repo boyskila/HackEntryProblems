@@ -13,13 +13,13 @@ public class CoordinatesCalculator {
 		}
 
 		public int calculateWrappedString(int index, Coordinates coord) {
-			return calculateWrappedStringRecursievly(index, input, coord);
+			return calculateWrappedStringRecursively(index, input, coord);
 		}
 
-		private int calculateWrappedStringRecursievly(int index, String str, Coordinates coord) {
+		private int calculateWrappedStringRecursively(int index, String str, Coordinates coord) {
 			char sign = str.charAt(++index);
 			Direction.reverse(sign, coord);
-			return isWrapper(sign) ? index : calculateWrappedStringRecursievly(index, str, coord);
+			return isWrapper(sign) ? index : calculateWrappedStringRecursively(index, str, coord);
 		}
 	}
 
@@ -31,10 +31,10 @@ public class CoordinatesCalculator {
 
 	public void calculateCoordinates(String input) {
 		int index = 0;
-		calculateCoordinatesRecursievly(index, input, coordinates);
+		calculateCoordinatesRecursively(index, input, coordinates);
 	}
 
-	private Coordinates calculateCoordinatesRecursievly(int index, String input, Coordinates coord) {
+	private Coordinates calculateCoordinatesRecursively(int index, String input, Coordinates coord) {
 		char sign = input.charAt(index);
 		if (isWrapper(sign)) {
 			StringWrapper wrapper = new StringWrapper(input);
@@ -42,7 +42,7 @@ public class CoordinatesCalculator {
 		}
 		Direction.defaultDirection(sign, coord);
 		index++;
-		return index == input.length() ? coord : calculateCoordinatesRecursievly(index, input, coord);
+		return index == input.length() ? coord : calculateCoordinatesRecursively(index, input, coord);
 	}
 
 	private boolean isWrapper(char sign) {
