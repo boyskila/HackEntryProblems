@@ -1,4 +1,0 @@
-{
-  "packageName": "underscore",
-  "dependencies": ["lodash","pinpode"]
-}

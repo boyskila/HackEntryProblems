@@ -1,9 +1,0 @@
-{
-  "packageName": "underscore",
-  "dependencies": ["lodash"],
-   "messages": {
-       "message1": "Installing underscore.",
-       "message2": "In order to install underscore, we need #dependencies.",
-       "message3": "underscore is already installed." 
-      }
-}
