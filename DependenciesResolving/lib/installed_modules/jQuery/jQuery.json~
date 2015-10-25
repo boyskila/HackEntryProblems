@@ -1,0 +1,4 @@
+{
+  "packageName": "jQuery",
+  "dependencies": ["queryJ","lodash"]
+}

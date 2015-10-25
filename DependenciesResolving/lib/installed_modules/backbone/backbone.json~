@@ -1,0 +1,4 @@
+{
+  "packageName": "backbone",
+  "dependencies": ["jQuery", "underscore","pinpode"]
+}

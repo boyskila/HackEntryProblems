@@ -1,0 +1,9 @@
+{
+  "packageName": "queryJ",
+  "dependencies": [],
+       "messages":{
+       "message1": "Installing queryJ.",
+       "message2": "In order to install queryJ, we need #dependencies.",
+       "message3": "queryJ is already installed." 
+      }
+}
