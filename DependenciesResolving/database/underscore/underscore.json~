@@ -1,0 +1,4 @@
+{
+  "packageName": "underscore",
+  "dependencies": ["lodash"]
+}
